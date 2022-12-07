@@ -175,8 +175,9 @@ public class Model implements NumericTest {
         int num1 = number1;
         int num2 = number2;
         int resultCal;
+        //lambda with created interface
         NumericTest isEven = (n) -> n==0;
-        if(number1 ==0 & number2 == 0)
+        if(isEven.test(number1) & isEven.test(number2))
         {
         throw new InputException("You can not divide by zero");
         }

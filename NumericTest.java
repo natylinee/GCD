@@ -6,8 +6,10 @@ package pl.polsl.zadanie10.model;
 
 /**
  *
- * @author Natalia
+ * @author NataliaMendera
+ * @version 1.0
  */
-public class NumericTest {
-    
+@FunctionalInterface
+public interface NumericTest {
+    boolean test(int n);
 }
